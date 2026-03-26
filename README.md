@@ -46,7 +46,7 @@ CREATE DATABASE swadeshi_travel_db;
 
 ### 2. Configure application.properties
 ```bash
-cd ackend/src/main/resources
+cd backend/src/main/resources
 cp application.properties.example application.properties
 ```
 Edit `application.properties` and fill in:
