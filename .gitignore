@@ -1,0 +1,32 @@
+# ============================
+# Spring Boot / Maven (Backend)
+# ============================
+backend/target/
+target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/*.jar
+backend/*.war
+
+
+# Uploaded user images (runtime data, not source code)
+backend/uploads/
+
+# ============================
+# React / Node (Frontend)
+# ============================
+node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# ============================
+# IDE / OS
+# ============================
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+*.class
+*.log

@@ -1,0 +1,10 @@
+package com.swadeshi.travel.repository;
+
+import com.swadeshi.travel.entity.Place;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface PlaceRepository extends JpaRepository<Place, Long> {
+    List<Place> findByDestinationId(Long destinationId);
+    List<Place> findByIdIn(List<Long> ids);
+}

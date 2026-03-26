@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Home",
+    "flights": "Flights",
+    "buses": "Buses",
+    "hotels": "Hotels",
+    "packages": "Packages",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register"
+  },
+  "home": {
+    "hero_title": "Discover Incredible India",
+    "hero_subtitle": "Personalized travel planning for the Indian explorer",
+    "search_placeholder": "Where do you want to go?",
+    "explore_btn": "Explore Now",
+    "popular": "Popular Destinations",
+    "recommended": "Recommended For You"
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "search_title": "Plan Your Trip",
+    "destination": "Destination",
+    "travel_type": "Travel Type",
+    "budget": "Budget (Rs.)",
+    "duration": "Duration (Days)",
+    "search_btn": "Search",
+    "solo": "Solo",
+    "couple": "Couple",
+    "family": "Family",
+    "business": "Business"
+  },
+  "recommend": {
+    "title": "Select Your Places",
+    "subtitle": "Choose places you want to visit",
+    "selected": "Selected",
+    "total_cost": "Total Estimated Cost",
+    "total_duration": "Total Duration",
+    "confirm_btn": "Confirm My Plan",
+    "hours": "hours",
+    "category": "Category",
+    "cost": "Est. Cost"
+  },
+  "payment": {
+    "title": "Complete Payment",
+    "summary": "Booking Summary",
+    "upi_label": "Enter UPI ID",
+    "upi_placeholder": "yourname@upi",
+    "pay_btn": "Pay Now",
+    "demo_note": "This is a demo payment. No real money will be charged.",
+    "success": "Payment Successful!",
+    "failed": "Payment Failed. Try again."
+  },
+  "pdf": {
+    "title": "Your Itinerary is Ready!",
+    "download_btn": "Download PDF",
+    "new_trip": "Plan Another Trip",
+    "booking_id": "Booking ID",
+    "destination": "Destination",
+    "travel_type": "Travel Type",
+    "total_cost": "Total Cost",
+    "duration": "Duration",
+    "date": "Booking Date"
+  },
+  "profile": {
+    "title": "My Profile",
+    "edit_btn": "Edit Profile",
+    "save_btn": "Save Changes",
+    "trip_history": "My Trip History",
+    "no_trips": "No trips booked yet",
+    "download": "Download PDF",
+    "name": "Full Name",
+    "phone": "Phone",
+    "city": "City",
+    "language": "Preferred Language"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Go Back",
+    "rs": "Rs."
+  }
+}

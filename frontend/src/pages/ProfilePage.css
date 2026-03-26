@@ -1,0 +1,88 @@
+.profile-page { background: var(--off-white); }
+.profile-layout {
+  display: grid; grid-template-columns: 260px 1fr; gap: 28px;
+  padding: 40px 0 60px; align-items: start;
+}
+
+.profile-sidebar {
+  background: white; border-radius: 20px; padding: 28px 24px;
+  border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm);
+  text-align: center; position: sticky; top: 90px;
+}
+.profile-avatar-large {
+  width: 80px; height: 80px;
+  background: linear-gradient(135deg, var(--saffron), var(--green));
+  color: white; border-radius: 50%;
+  font-size: 32px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+}
+.profile-sidebar h3 { font-size: 18px; color: var(--navy); margin-bottom: 4px; }
+.profile-sidebar p { font-size: 13px; color: var(--gray-400); margin-bottom: 2px; }
+.profile-city { margin-top: 4px; }
+
+.profile-tabs { display: flex; flex-direction: column; gap: 8px; margin-top: 24px; }
+.tab-btn {
+  padding: 11px 16px; border-radius: 10px;
+  border: 1.5px solid var(--gray-200); background: white;
+  font-size: 14px; font-weight: 500; color: var(--gray-600);
+  cursor: pointer; transition: all 0.2s; text-align: left;
+}
+.tab-btn.active { background: var(--saffron); color: white; border-color: var(--saffron); }
+.tab-btn:hover:not(.active) { border-color: var(--saffron); color: var(--saffron); }
+
+.profile-main { display: flex; flex-direction: column; gap: 24px; }
+
+.profile-info-card {
+  background: white; border-radius: 20px; padding: 32px;
+  border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm);
+}
+.profile-card-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 28px;
+}
+.profile-card-header h2 { font-size: 22px; color: var(--navy); }
+.edit-btn { padding: 9px 20px; font-size: 13px; }
+
+.profile-form-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+}
+.profile-field { display: flex; flex-direction: column; gap: 6px; }
+.profile-field label { font-size: 12px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.6px; }
+.profile-field span { font-size: 15px; color: var(--gray-800); padding: 4px 0; }
+
+.trips-section h2 { font-size: 22px; color: var(--navy); margin-bottom: 20px; }
+.no-trips {
+  background: white; border-radius: 16px; padding: 48px;
+  text-align: center; border: 1px solid var(--gray-200);
+  color: var(--gray-400);
+}
+.trips-list { display: flex; flex-direction: column; gap: 14px; }
+.trip-card {
+  background: white; border-radius: 16px; padding: 20px 24px;
+  border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm);
+  display: flex; justify-content: space-between; align-items: center;
+  transition: box-shadow 0.2s;
+}
+.trip-card:hover { box-shadow: var(--shadow-md); }
+.trip-card-left { display: flex; gap: 16px; align-items: center; }
+.trip-dest-icon {
+  width: 46px; height: 46px; min-width: 46px;
+  background: var(--saffron-pale); color: var(--saffron);
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 900;
+}
+.trip-card-left h4 { font-size: 16px; color: var(--navy); margin-bottom: 3px; }
+.trip-card-left p { font-size: 13px; color: var(--gray-500); margin-bottom: 2px; }
+.trip-date { color: var(--gray-400) !important; font-size: 12px !important; }
+
+.trip-card-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.trip-status {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.6px; padding: 4px 10px; border-radius: 6px;
+}
+.trip-status.success { background: var(--green-pale); color: var(--green); }
+.trip-status.pending { background: #fff8e1; color: #f57f17; }
+.trip-status.failed { background: #ffeaea; color: #c0392b; }
+.trip-card-right strong { font-size: 17px; color: var(--navy); }
+.download-trip-btn { padding: 7px 14px; font-size: 12px; }

@@ -1,0 +1,113 @@
+.payment-page { background: var(--off-white); min-height: 100vh; }
+.payment-layout {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  padding: 40px 0 60px; align-items: start; max-width: 900px; margin: 0 auto;
+}
+
+.payment-summary-card, .payment-form-card {
+  background: white; border-radius: 20px; padding: 32px;
+  border: 1px solid var(--gray-200); box-shadow: var(--shadow-md);
+}
+.payment-summary-card h2, .payment-form-card h2 {
+  font-size: 22px; color: var(--navy); margin-bottom: 20px;
+}
+
+.summary-dest {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--saffron-pale); border-radius: 14px;
+  padding: 16px 20px; margin-bottom: 24px;
+}
+.summary-dest-icon {
+  width: 52px; height: 52px; min-width: 52px;
+  background: var(--saffron); color: white;
+  border-radius: 14px; display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 900;
+}
+.summary-dest h3 { font-size: 18px; color: var(--navy); }
+.summary-dest p { color: var(--gray-400); font-size: 14px; margin-top: 2px; }
+
+.booking-details { margin-bottom: 20px; }
+.detail-row {
+  display: flex; justify-content: space-between;
+  padding: 8px 0; border-bottom: 1px solid var(--gray-100);
+  font-size: 14px; color: var(--gray-600);
+}
+.detail-row strong { color: var(--gray-800); }
+
+.selected-places-list { margin-bottom: 20px; }
+.selected-places-list h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+.place-row {
+  display: flex; justify-content: space-between;
+  font-size: 13px; padding: 5px 0;
+  color: var(--gray-600); border-bottom: 1px dashed var(--gray-100);
+}
+.place-row span:last-child { font-weight: 600; color: var(--saffron); }
+
+.payment-total {
+  background: var(--navy); color: white;
+  border-radius: 12px; padding: 12px 20px; margin-top: 8px;
+}
+.payment-total-row {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 14px; padding: 4px 0;
+}
+.payment-total-row span { color: rgba(255,255,255,0.8); }
+.discount-row span { color: #86efac !important; font-weight: 600; }
+.final-row { border-top: 1px solid rgba(255,255,255,0.2); margin-top: 6px; padding-top: 8px; }
+.final-row span { font-size: 15px; color: white !important; }
+.final-row strong { font-size: 22px; font-family: var(--font-display); }
+
+/* FORM */
+.payment-sub { color: var(--gray-400); font-size: 14px; margin-bottom: 24px; margin-top: -10px; }
+.upi-logos {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px;
+}
+.upi-logos span {
+  background: var(--gray-100); border: 1px solid var(--gray-200);
+  padding: 8px 16px; border-radius: 8px;
+  font-size: 13px; font-weight: 600; color: var(--gray-700);
+}
+.upi-form { margin-bottom: 24px; }
+.upi-form label { display: block; font-size: 14px; font-weight: 600; color: var(--gray-700); margin-bottom: 8px; }
+.upi-input-wrap { position: relative; }
+.upi-icon {
+  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+  font-size: 16px; font-weight: 700; color: var(--saffron);
+}
+.upi-input { padding-left: 36px !important; }
+.upi-hint { font-size: 12px; color: var(--gray-400); margin-top: 6px; }
+
+.amount-display {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--green-pale); border: 1px solid var(--green-light);
+  border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;
+}
+.amount-display span { color: var(--green); font-size: 14px; font-weight: 600; }
+.amount-display strong { font-size: 20px; color: var(--green); font-family: var(--font-display); }
+
+.pay-btn { width: 100%; padding: 15px; font-size: 16px; border-radius: 12px; margin-bottom: 14px; }
+.demo-note {
+  text-align: center; font-size: 12px; color: var(--gray-400);
+  background: var(--gray-100); border-radius: 8px; padding: 8px 14px;
+}
+
+/* SUCCESS / FAILED */
+.payment-success, .payment-failed {
+  text-align: center; padding: 20px 0;
+  animation: fadeIn 0.4s ease;
+}
+.success-icon {
+  width: 72px; height: 72px; background: var(--green);
+  color: white; border-radius: 50%; font-size: 32px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+}
+.failed-icon {
+  width: 72px; height: 72px; background: #e53935;
+  color: white; border-radius: 50%; font-size: 32px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+}
+.payment-success h2 { color: var(--green); }
+.payment-failed h2 { color: #e53935; }
+.payment-success p, .payment-failed p { color: var(--gray-500); margin-bottom: 16px; }
