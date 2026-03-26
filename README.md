@@ -1,6 +1,6 @@
 # 🇮🇳 Swadeshi Travel
 
-A full-stack travel planning web application built as a B.Tech Capstone Project.  
+A full-stack travel planning web application built as a Project.  
 Users can explore destinations, select tourist places, book trips, apply offers, and download PDF itineraries.  
 Admins get a full dashboard with analytics, user management, and content management.
 
@@ -22,8 +22,8 @@ Admins get a full dashboard with analytics, user management, and content managem
 
 ```
 2/
-├── swadeshi-travel-backend/    # Spring Boot REST API
-└── swadeshi-travel-frontend/   # React SPA
+├── backend/    # Spring Boot REST API
+└── frontend/   # React SPA
 ```
 
 ---
@@ -46,7 +46,7 @@ CREATE DATABASE swadeshi_travel_db;
 
 ### 2. Configure application.properties
 ```bash
-cd swadeshi-travel-backend/src/main/resources
+cd ackend/src/main/resources
 cp application.properties.example application.properties
 ```
 Edit `application.properties` and fill in:
@@ -56,7 +56,7 @@ Edit `application.properties` and fill in:
 
 ### 3. Run the backend
 ```bash
-cd swadeshi-travel-backend
+cd backend
 mvn spring-boot:run
 ```
 Backend runs at `http://localhost:8080`
@@ -66,7 +66,7 @@ Backend runs at `http://localhost:8080`
 ## Frontend Setup
 
 ```bash
-cd swadeshi-travel-frontend
+cd frontend
 npm install
 npm start
 ```
@@ -105,5 +105,4 @@ UPDATE users SET role='ADMIN', active=1 WHERE email='your@email.com';
 
 ## Environment Notes
 
-- Uploaded images are stored in `swadeshi-travel-backend/uploads/` (excluded from Git)
-- `application.properties` is excluded from Git — use `application.properties.example` as template
+- Uploaded images are stored in `backend/uploads/` (excluded from Git)
