@@ -47,7 +47,6 @@ CREATE DATABASE swadeshi_travel_db;
 ### 2. Configure application.properties
 ```bash
 cd backend/src/main/resources
-cp application.properties.example application.properties
 ```
 Edit `application.properties` and fill in:
 - `spring.datasource.username` — your MySQL username
